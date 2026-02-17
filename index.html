@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DKD Run 2026 | PCMC Running Event - March 1st</title>
+  <meta name="description" content="Join the DKD Running Event organized by PCMC on March 1st, 2026. Run with thousands! Register now - Yes, I'm in!">
+  <meta property="og:title" content="DKD Run 2026 | PCMC Running Event">
+  <meta property="og:description" content="March 1st, 2026 - Are you running? Say YES and join the movement!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise-overlay"></div>
+  
+  <!-- Animated background -->
+  <div class="bg-gradient"></div>
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+    <div class="shape shape-5"></div>
+  </div>
+
+  <!-- Runner silhouettes -->
+  <div class="runners-track">
+    <div class="runner r1">🏃</div>
+    <div class="runner r2">🏃‍♂️</div>
+    <div class="runner r3">🏃‍♀️</div>
+  </div>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-badge">PCMC PRESENTS</div>
+      <h1 class="hero-title">
+        <span class="title-line">DKD</span>
+        <span class="title-sub">RUN 2026</span>
+      </h1>
+      <p class="hero-date">March 1st, 2026</p>
+      <p class="hero-tagline">One run. One community. One unforgettable experience.</p>
+      
+      <div class="live-stats">
+        <div class="stat-card">
+          <span class="stat-number" id="yesCount">0</span>
+          <span class="stat-label">Running With Us</span>
+        </div>
+        <div class="stat-card stat-no">
+          <span class="stat-number" id="noCount">0</span>
+          <span class="stat-label">Can't Make It</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <h2>Are you in?</h2>
+      <p class="cta-sub">Join thousands of runners. Make your choice below.</p>
+      
+      <div class="rsvp-buttons">
+        <button class="btn btn-yes" data-response="yes">
+          <span class="btn-icon">✓</span>
+          <span>YES, I'M RUNNING!</span>
+        </button>
+        <button class="btn btn-no" data-response="no">
+          <span class="btn-icon">✕</span>
+          <span>No, not this time</span>
+        </button>
+      </div>
+
+      <!-- Registration Form (appears after clicking Yes) -->
+      <form id="registrationForm" class="registration-form hidden">
+        <div class="form-glow"></div>
+        <h3>Almost there! Leave your details</h3>
+        <div class="form-row">
+          <input type="text" id="participantName" placeholder="Your name" required>
+          <input type="email" id="participantEmail" placeholder="Email address" required>
+        </div>
+        <button type="submit" class="btn btn-submit">Confirm Participation</button>
+      </form>
+
+      <!-- No response form -->
+      <form id="declineForm" class="registration-form hidden">
+        <p class="form-note">We'll miss you! Leave a message (optional)</p>
+        <input type="text" id="declineMessage" placeholder="Maybe next time...">
+        <button type="submit" class="btn btn-submit btn-secondary">Submit</button>
+      </form>
+    </section>
+
+    <!-- Success state -->
+    <div id="successState" class="success-state hidden">
+      <div class="success-icon">🎉</div>
+      <h2>You're officially in!</h2>
+      <p>Share the excitement. Get your friends to run too!</p>
+      <div class="share-buttons">
+        <button class="share-btn" data-share="whatsapp" title="Share on WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </button>
+        <button class="share-btn" data-share="twitter" title="Share on X">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          X (Twitter)
+        </button>
+        <button class="share-btn" id="copyLinkBtn" title="Copy link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          Copy Link
+        </button>
+      </div>
+      <p class="share-url" id="shareUrl"></p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Organized by <strong>PCMC</strong> • DKD Run 2026</p>
+      <p class="footer-date">March 1st, 2026 — See you at the start line! 🏁</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
